@@ -1,0 +1,14 @@
+{
+  "name": "study2-local-experiment",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check web/app.js && node --check lib/math.mjs && node --check lib/experiment-core.mjs && node --check scripts/smoke-test.mjs",
+    "test": "node scripts/smoke-test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
